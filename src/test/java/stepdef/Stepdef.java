@@ -63,23 +63,27 @@ public class Stepdef {
 		}
 		@Given("^Recruiter clicks on Jobs Menu$")
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
-			driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
 		}
 
 		@Then("^select create new job section$")
 		public void select_create_new_job_section() throws Throwable {
-			driver.findElement(By.linkText("Create New Job")).click();
 			 Thread.sleep(2000); 
+			driver.findElement(By.linkText("Create New Job")).click();
+			
 		}
 
 		@When("^click on Start button of form$")
 		public void click_on_Start_button_of_form() throws Throwable {
-			driver.findElement(By.xpath("//div[@class='mt-3']//child::button[contains(text(),'Start')]")).click(); 
 			Thread.sleep(4000);
+			driver.findElement(By.xpath("//div[@class='mt-3']//child::button[contains(text(),'Start')]")).click(); 
+			
 		}
 
 		@When("^choose office address \"([^\"]*)\"$")
 		public void choose_office_address(String address) throws Throwable {
+			Thread.sleep(4000);
 			WebElement OfficeAddress=driver.findElement(By.xpath("//input[@id='react-select-3-input']"));
 		    OfficeAddress.sendKeys(address);
 		    Thread.sleep(2000);
