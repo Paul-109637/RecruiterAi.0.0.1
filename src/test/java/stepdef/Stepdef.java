@@ -14,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -64,10 +66,14 @@ public class Stepdef {
 		}
 		@Given("^Recruiter clicks on Jobs Menu$")
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
-			Thread.sleep(5000);
-			driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a/span/b")).click();
-			driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
-			driver.findElement(By.linkText("Jobs")).click();
+			WebDriverWait wait = new WebDriverWait(driver,30);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//b[contains(text(),'Jobs')])[1]")));
+// click on the compose button as soon as the "compose" button is visible
+driver.findElement(By.xpath("(//b[contains(text(),'Jobs')])[1]")).click();
+
+			//driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a/span/b")).click();
+			//driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
+			//driver.findElement(By.linkText("Jobs")).click();
 		}
 
 		@Then("^select create new job section$")
