@@ -1,5 +1,5 @@
 @tag
-Feature:Candidate choose Sign in and Apply
+Feature:New Candidate Registration
 
 @Registration
 Scenario Outline:Verify Candidate registration
@@ -16,7 +16,7 @@ And candidate accepts terms and conditions
 And candidate enters submit button of registration
 
 Examples:
-|firstname|lastname|mail              |password    |conformpassword |
-|karun    |kumar   |karun11@0001.com  |akshay@0001 |akshay@0001     |
-|Suresh   |kumar   |suresh11@0001.com |suresh@0001 |suresh@0001     |
+|firstname|lastname|mail               |password    |conformpassword |
+|karun    |kumar   |karun111@0001.com  |akshay@0001 |akshay@0001     |
+|Suresh   |kumar   |suresh111@0001.com |suresh@0001 |suresh@0001     |
 
