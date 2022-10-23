@@ -63,8 +63,8 @@ public class Stepdef {
 		}
 		@Given("^Recruiter clicks on Jobs Menu$")
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
-			Thread.sleep(3000);
-			driver.findElement(By.xpath("(//span[@class='bx--text-truncate--end'])[2]")).click();
+			Thread.sleep(4000);
+			driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a")).click();
 		}
 
 		@Then("^select create new job section$")
