@@ -53,7 +53,8 @@ public class Stepdef {
 		public void verify_captcha_and_click_on_Login_button() throws Throwable {
 			driver.findElement(By.xpath("//div[@class='mb-2']")).click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click(); 
+			driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
+			Thread.sleep(2000);
 		}
 
 		@Given("^Click on Logout Button$")
@@ -63,9 +64,8 @@ public class Stepdef {
 		}
 		@Given("^Recruiter clicks on Jobs Menu$")
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
-			Thread.sleep(4000);
 			//driver.findElement(By.linkText("Jobs")).click();
 		}
 
