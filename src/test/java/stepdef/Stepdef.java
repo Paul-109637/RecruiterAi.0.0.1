@@ -63,7 +63,7 @@ public class Stepdef {
 		}
 		@Given("^Recruiter clicks on Jobs Menu$")
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
-			Thread.sleep(5000);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
 			driver.findElement(By.linkText("Jobs")).click();
 		}
