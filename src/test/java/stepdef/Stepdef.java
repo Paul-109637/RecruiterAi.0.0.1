@@ -77,7 +77,7 @@ public class Stepdef {
 
 		@Then("^select create new job section$")
 		public void select_create_new_job_section() throws Throwable {
-			 Thread.sleep(4000); 
+			 Thread.sleep(2000); 
 			driver.findElement(By.linkText("Create New Job")).click();
 			Thread.sleep(2000);
 			
@@ -85,7 +85,7 @@ public class Stepdef {
 
 		@When("^click on Start button of form$")
 		public void click_on_Start_button_of_form() throws Throwable {
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[@class='mt-3']//child::button[contains(text(),'Start')]")).click(); 
 			
 		}
