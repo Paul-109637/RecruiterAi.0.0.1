@@ -78,7 +78,7 @@ public class Stepdef {
 		@Then("^select create new job section$")
 		public void select_create_new_job_section() throws Throwable {
 			 Thread.sleep(2000); 
-			driver.findElement(By.linkText("Create New Job")).click();
+			driver.findElement(By.xpath("/html/body/section/div[1]/div/div[3]/div/section/div/div/div[4]/div[1]/div[1]/div/div/div[3]/div[3]/div[2]/div")).click();
 			Thread.sleep(2000);
 			
 		}
