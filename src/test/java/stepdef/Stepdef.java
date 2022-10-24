@@ -68,10 +68,11 @@ public class Stepdef {
 		public void recruiter_clicks_on_Jobs_Menu() throws Throwable {
 		//Thread.sleep(2000);	
               // driver.findElement(By.xpath("(//b[contains(text(),'Jobs')])[1]")).click();
-                      Thread.sleep(3000);	
+                      Thread.sleep(3000);
+			driver.findElement(By.xpath("(//span[@class='bx--text-truncate--end'])[2]")).click();
 	             // driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a")).click();   
 			//driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a/span/b")).click();
-			driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
+			//driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
 			//driver.findElement(By.linkText("Jobs")).click();
 		}
 
