@@ -56,7 +56,6 @@ public class Stepdef {
 			driver.findElement(By.xpath("//div[@class='mb-2']")).click();
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
-			Thread.sleep(2000);
 		}
 
 		@Given("^Click on Logout Button$")
