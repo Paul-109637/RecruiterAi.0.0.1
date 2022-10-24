@@ -26,19 +26,19 @@ public class Stepdef {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		@Given("^Launch Application using valid URL$")
 		public void launch_Application_using_valid_URL() throws Throwable {
-			/*System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver = new ChromeDriver();
 	        driver.manage().deleteAllCookies();
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	        driver.get("http://staging.x0pa.ai/app/roboroy");*/
-	        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	        driver.get("http://staging.x0pa.ai/app/roboroy");
+	       /* System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("disable-gpu");
 			driver=new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	        driver.get("http://staging.x0pa.ai/app/roboroy");
+	        driver.get("http://staging.x0pa.ai/app/roboroy");*/
 		}
 		@Then("^accept cookies and choose login type$")
 		public void accept_cookies_and_choose_login_type() throws Throwable {
