@@ -9,7 +9,7 @@ Then verify captcha and click on Login button
 
 @CreateNewJob
 Scenario Outline: Verify create new job functionality
-Given Recruiter clicks on Jobs Menu 
+#Given Recruiter clicks on Jobs Menu 
 Then select create new job section
 When click on Start button of form
 #And click on Add New Office button to add new office Address
