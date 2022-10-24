@@ -26,7 +26,7 @@ public class Stepdef {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		@Given("^Launch Application using valid URL$")
 		public void launch_Application_using_valid_URL() throws Throwable {
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "LinuxChrome.exe");
 			driver = new ChromeDriver();
 	        driver.manage().deleteAllCookies();
 	        driver.manage().window().maximize();
