@@ -14,7 +14,7 @@ And Candidate enters last name "<lastname>"
 And Candidate  chooses Country "<country>"
 And Candidate enters phone no "<phoneno>"
 And Candidate enters Email Address "<mail>"
-And Candidate uploads his resume
+#And Candidate uploads his resume
 
 Examples:
 |firstname|lastname|country|phoneno   |mail           |
