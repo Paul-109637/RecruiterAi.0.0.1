@@ -72,7 +72,7 @@ public class Stepdef {
 	             // driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a")).click();   
 			//driver.findElement(By.xpath("/html/body/section/div[1]/div/header/nav/ul/li[2]/a/span/b")).click();
 			//driver.findElement(By.xpath("(//a[@class='bx--header__menu-item'])[2]")).click();
-			//driver.findElement(By.linkText("Jobs")).click();
+			driver.findElement(By.linkText("Jobs")).click();
 		}
 
 		@Then("^select create new job section$")
