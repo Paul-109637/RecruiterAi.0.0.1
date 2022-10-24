@@ -7,10 +7,10 @@ Given Launch Application using valid URL
 Then accept cookies and choose login type
 When enters valid credentials "paul@trainingqa.com" and "XPAStag0"
 Then verify captcha and click on Login button
+Given Recruiter clicks on Jobs Menu 
 
 @CreateNewJob
 Scenario Outline:Verify create new job functionality with basic information
-Given Recruiter clicks on Jobs Menu 
 Then select create new job section
 When click on Start button of form
 And choose office address "<office address>"
