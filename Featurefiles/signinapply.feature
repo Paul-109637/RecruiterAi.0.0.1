@@ -29,7 +29,7 @@ And Candidate  chooses Country "<country>"
 And Candidate enters phone no "<phoneno>"
 And Candidate enters Email Address "<mail>"
 And click on checkbox to recieve whatsapp notifications
-And Candidate uploads his resume
+#And Candidate uploads his resume
 #Then Candidate accepts terms and conditions by clicking on checkbox
 #And clicks on Next button
 Examples:
