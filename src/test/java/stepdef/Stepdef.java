@@ -473,7 +473,7 @@ public class Stepdef {
 			driver.findElement(By.xpath("//div[@class='bx--file__drop-container']")).click();
 			Thread.sleep(2000);
 			Robot rbt = new Robot(); 
-		    StringSelection str = new StringSelection("~/xuploads/VinayResume.docx");
+		    StringSelection str = new StringSelection("C:\\Users\\paul\\Desktop\\X0PAAI\\AI_AUTOMATION\\Docfiles\\jd.docx");
 		    Thread.sleep(2000);
 		    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 		    rbt.keyPress(KeyEvent.VK_CONTROL);
@@ -524,7 +524,7 @@ public class Stepdef {
 		public void recruiter_uploads_Attachment_file() throws Throwable {
 			Thread.sleep(2000);
 			Robot rb = new Robot(); 
-		    StringSelection str = new StringSelection("~/xuploads/VinayResume.docx");
+		    StringSelection str = new StringSelection("C:\\Users\\paul\\Desktop\\X0PAAI\\AI_AUTOMATION\\Docfiles\\jd.docx");
 		    Thread.sleep(2000);
 		    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 		     rb.keyPress(KeyEvent.VK_CONTROL);
@@ -679,7 +679,7 @@ public class Stepdef {
 			Thread.sleep(2000);
 			driver.findElement(By.className("bx--file__drop-container")).click();
 			Robot rb = new Robot();
-			StringSelection str = new StringSelection("~/xuploads/VinayResume.docx");
+			StringSelection str = new StringSelection("C:\\Users\\paul\\Desktop\\X0PAAI\\AI_AUTOMATION\\Docfiles\\jd.docx");
 			Thread.sleep(2000);
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 			rb.keyPress(KeyEvent.VK_CONTROL);
